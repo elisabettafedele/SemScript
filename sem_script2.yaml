@@ -1,0 +1,101 @@
+prefixes:
+  ex: "http://example.com/"
+
+mappings:
+  scene:
+    sources:
+      - ['persons.json~jsonpath', '$[*].content[*]']
+    s: ex:scene_$(scene_number)
+    po:
+      - [a, ex:Scene]
+      - [ex:movie, "lady_bird"]
+      - [ex:sceneNumber, $(scene_number)]
+      - [ex:location, $(scene_info.location)]
+      - [ex:region, $(scene_info.region)]
+      - [ex:time, $(scene_info.time)]
+  scene2:
+    sources:
+      - ['persons.json~jsonpath', '$[*]']
+    s: ex:scene_$(content[*].scene_number)
+    po:
+      - [ex:page, $(page)]
+  action_scene:
+    sources:
+      - ['persons.json~jsonpath', '$[*].content[*].scene[*].content[*]']
+    po:
+      - [ex:actionDescription, $(text)]
+      - [ex:x, $(x)]
+      - [ex:y, $(y)]
+  transition_scene:
+    sources:
+      - ['persons.json~jsonpath', '$[*].content[*].scene[*]']
+    po:
+      - [ex:transitionDescription, $(content.text)]
+      - [ex:metadata_x, $(metadata.x)]
+      - [ex:metadata_y, $(metadata.y)]
+  character_scene:
+    sources:
+      - ['persons.json~jsonpath', '$[*].content[*].scene[*]']
+    po:
+      - [a, ex:CharacterScene]
+      - p: ex:hasActor
+        o:
+          - mapping: character
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(content.character)]
+                - [str2, $(content.character)]
+  dual_dialogue_scene:
+    sources:
+      - ['persons.json~jsonpath', '$[*].content[*].scene[*]']
+    po:
+      - [a, ex:DualDialogueScene]
+      - p: ex:hasActor1
+        o:
+          - mapping: character1
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(content.character1.character.character)]
+                - [str2, $(content.character1.character.character)]
+      - p: ex:hasActor2
+        o:
+          - mapping: character2
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(content.character2.character.character)]
+                - [str2, $(content.character2.character.character)]
+    character:
+      sources:
+        - ['persons.json~jsonpath', '$[*].content[*].scene[*]']
+      po:
+        - [a, ex:Character]
+        - [ex:hasName, $(content.character)]
+        - [ex:says, $(content.dialogue)]
+        - [ex:hasModifier, $(content.modifier)]
+    character1:
+      sources:
+        - ['persons.json~jsonpath', '$[*].content[*].scene[*]']
+      po:
+        - [a, ex:Character]
+        - [ex:hasName, $(content.character1.character.character)]
+        - [ex:says, $(content.character1.character.dialogue)]
+        - [ex:hasModifier, $(content.character1.character.modifier)]
+    character2:
+      sources:
+        - ['persons.json~jsonpath', '$[*].content[*].scene[*]']
+      po:
+        - [a, ex:Character]
+        - [ex:hasName, $(content.character2.character.character)]
+        - [ex:says, $(content.character2.character.dialogue)]
+        - [ex:hasModifier, $(content.character2.character.modifier)]
+    line:
+      sources:
+        - ['persons.json~jsonpath', '$[*].content[*].scene[*].content']
+      po:
+        - [a, ex:Line]
+        - [ex:content, $(dialogue)]
+        - [ex:content, $(character1.character.dialogue)]
+        - [ex:content, $(character2.character.dialogue)]
