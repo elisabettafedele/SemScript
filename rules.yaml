@@ -1,0 +1,76 @@
+prefixes:
+  ex: "http://example.com/"
+  
+mappings:
+    scene:
+        sources:
+        - ['movies/the_social_network.json~jsonpath', '[*].content[*]']
+        s: ex:scene_$(scene_number)
+        po:
+        - [a, ex:Scene]
+        - [ex:sceneNumber, $(scene_number)]
+        - [ex:location, $(scene_info.location)]
+        - [ex:region, $(scene_info.region)]
+        - [ex:time, $(scene_info.time)]
+    scene2:
+        sources:
+        - ['movies/the_social_network.json~jsonpath', '$[*]']
+        s: ex:scene_$(content[*].scene_number)
+        po:
+        - [ex:page, $(page)]
+    action_scene:
+        sources:
+        - ['movies/the_social_network.json~jsonpath', '$[*].content[*].scene[*].content[*]']
+        po:
+        - [ex:actionDescription, $(text)]
+    transition_scene:
+        sources:
+        - ['movies/the_social_network.json~jsonpath', '$[*].content[*].scene[*]']
+        po:
+        - [ex:transitionDescription, $(content.text)]
+    character:
+        sources:
+            - ['movies/the_social_network.json~jsonpath', '$[*].content[*].scene[*]']
+        s: ex:$(content.character)
+        po:
+            - [ex:hasName, $(content.character)]
+            - [ex:says, $(content.dialogue)]
+            - [ex:hasModifier, $(content.modifier)]
+            - [ex:hasName, $(content.character2.character.character)]
+            - [ex:says, $(content.character2.character.dialogue)]
+            - [ex:hasModifier, $(content.character2.character.modifier)]
+            - [ex:hasName, $(content.character1.character.character)]
+            - [ex:says, $(content.character1.character.dialogue)]
+            - [ex:hasModifier, $(content.character1.character.modifier)]
+    character_scene:
+        sources:
+        - ['movies/the_social_network.json~jsonpath', '$[*].content[*].scene[*]']
+        po:
+             - p: ex:hasActor
+               o:
+                - mapping: character
+                  condition:
+                    function: equal
+                    parameters:
+                        - [str1, $(content.character)]
+                        - [str2, $(content.character)]
+    dual_dialogue_scene:
+        sources:
+        - ['movies/the_social_network.json~jsonpath', '$[*].content[*].scene[*]']
+        po:
+             - p: ex:hasActor1
+               o:
+                - mapping: character
+                  condition:
+                    function: equal
+                    parameters:
+                        - [str1, $(content.character1.character.character)]
+                        - [str2, $(content.character1.character.character)]
+             - p: ex:hasActor2
+               o:
+                - mapping: character
+                  condition:
+                    function: equal
+                    parameters:
+                        - [str1, $(content.character2.character.character)]
+                        - [str2, $(content.character2.character.character)]
