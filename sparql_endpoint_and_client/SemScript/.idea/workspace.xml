@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13fab5b4-944f-4710-b7bc-f8916e2dd00d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/polimi/ke/clients_for_fuseki_server/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/polimi/ke/clients_for_fuseki_server/Client.java" afterDir="false" />
-    </list>
+    <list default="true" id="13fab5b4-944f-4710-b7bc-f8916e2dd00d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +36,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/queries" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -135,7 +133,7 @@
       <workItem from="1622967726980" duration="371000" />
       <workItem from="1622968349883" duration="1948000" />
       <workItem from="1622970328852" duration="8000" />
-      <workItem from="1622970354254" duration="18833000" />
+      <workItem from="1622970354254" duration="19307000" />
     </task>
     <servers />
   </component>
