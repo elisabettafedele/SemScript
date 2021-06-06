@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13fab5b4-944f-4710-b7bc-f8916e2dd00d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.ipynb_checkpoints/Queries-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Queries.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Queries.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../competency questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../competency questions.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/polimi/ke/clients_for_fuseki_server/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/polimi/ke/clients_for_fuseki_server/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/polimi/ke/embedded_client_server/ClientForEmbeddedServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/polimi/ke/embedded_client_server/ClientForEmbeddedServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/queries/2_character_says.rq" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/queries/2_character_says.rq" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/queries/7_scene_starting_page.rq" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/queries/7_scene_starting_page.rq" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SemScript.owl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SemScript.owl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movies_in_rdf/the_social_network.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/movies_in_rdf/the_social_network.ttl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +135,7 @@
       <workItem from="1622967726980" duration="371000" />
       <workItem from="1622968349883" duration="1948000" />
       <workItem from="1622970328852" duration="8000" />
-      <workItem from="1622970354254" duration="18123000" />
+      <workItem from="1622970354254" duration="18833000" />
     </task>
     <servers />
   </component>
