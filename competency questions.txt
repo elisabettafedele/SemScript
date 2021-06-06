@@ -1,7 +1,7 @@
 COMPETENCY QUESTIONS: (8)
 1) Which characters speak in german at least once?
 2) Which characters say a sentence x?
-3) Which are the numbers of the scenes played in the campus bar during the night?
+3) Which are the numbers of the scenes played in a New York taxicab during night?
 4) Which are the pages occupied by the scene number x?
 5) In which part of the day does the scene number x take place?
 6) How many times is the word "Facebook" used?
