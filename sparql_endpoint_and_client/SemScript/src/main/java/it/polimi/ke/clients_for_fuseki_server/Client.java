@@ -12,7 +12,9 @@ import org.apache.jena.rdfconnection.RDFConnection;
 import org.apache.jena.rdfconnection.RDFConnectionFactory;
 import org.apache.jena.system.Txn;
 
-/** RDF Connection example */
+/**
+ * TODO
+ */
 public class Client {
     public static void main(String ...args) {
         //Set the name of the file you want to upload
