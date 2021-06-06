@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="13fab5b4-944f-4710-b7bc-f8916e2dd00d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/polimi/ke/MainClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/polimi/ke/clients_for_fuseki_server/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/polimi/ke/embedded_client_server/ClientForEmbeddedServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/polimi/ke/embedded_client_server/EmbeddedServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/polimi/ke/utils/RDFSerializationFormatsConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/SemScript.owl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/queries/0_get_all.rq" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/queries/1_foreign_language.rq" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/queries/2_character_says.rq" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/queries/3_scenes_location_time.rq" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/queries/4_scene_occupied_pages.rq" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/queries/5_scene_time.rq" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/queries/6_most-used_word.rq" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/queries/7_scene_starting_page.rq" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/queries/8_characters_together.rq" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/queries/queries.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/it/polimi/ke/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../movies_in_rdf/the_social_network.rdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rules.rml" beforeDir="false" afterPath="$PROJECT_DIR$/../../rules.rml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rules.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../rules.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1tZDT2gutSt1im9JoLL3sGRLP9C" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/queries" />
+    <property name="settings.editor.selected.configurable" value="settings.SparqlAppEndpointSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Filippo\SemScript KE project\KeProjectSemScript\sparql_endpoint_and_client\SemScript\src\main\resources\queries" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="it.polimi.ke.clients_for_fuseki_server" />
+      <recent name="it.polimi.ke.client_server" />
+      <recent name="it.polimi.ke.utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ClientForEmbeddedServer">
+    <configuration name="ClientForEmbeddedServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.polimi.ke.embedded_client_server.ClientForEmbeddedServer" />
+      <module name="SemScript" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.polimi.ke.embedded_client_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmbeddedServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.polimi.ke.embedded_client_server.EmbeddedServer" />
+      <module name="SemScript" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.polimi.ke.embedded_client_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RDFSerializationFormatsConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.polimi.ke.utils.RDFSerializationFormatsConverter" />
+      <module name="SemScript" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.polimi.ke.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ClientForEmbeddedServer" />
+        <item itemvalue="Application.EmbeddedServer" />
+        <item itemvalue="Application.RDFSerializationFormatsConverter" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13fab5b4-944f-4710-b7bc-f8916e2dd00d" name="Default Changelist" comment="" />
+      <created>1622967724943</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622967724943</updated>
+      <workItem from="1622967726980" duration="371000" />
+      <workItem from="1622968349883" duration="1948000" />
+      <workItem from="1622970328852" duration="8000" />
+      <workItem from="1622970354254" duration="12279000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

@@ -1,5 +1,5 @@
 prefixes:
-  ex: "http://example.com/"
+  ex: "http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#"
   
 mappings:
     scene:
@@ -36,12 +36,22 @@ mappings:
             - [ex:hasName, $(content.character)]
             - [ex:says, $(content.dialogue)]
             - [ex:hasModifier, $(content.modifier)]
-            - [ex:hasName, $(content.character2.character.character)]
-            - [ex:says, $(content.character2.character.dialogue)]
-            - [ex:hasModifier, $(content.character2.character.modifier)]
+    character1:
+        sources:
+            - ['movies/the_social_network.json~jsonpath', '$[*].content[*].scene[*]']
+        s: ex:$(content.character)
+        po:
             - [ex:hasName, $(content.character1.character.character)]
             - [ex:says, $(content.character1.character.dialogue)]
             - [ex:hasModifier, $(content.character1.character.modifier)]
+    character2:
+        sources:
+            - ['movies/the_social_network.json~jsonpath', '$[*].content[*].scene[*]']
+        s: ex:$(content.character)
+        po:
+            - [ex:hasName, $(content.character2.character.character)]
+            - [ex:says, $(content.character2.character.dialogue)]
+            - [ex:hasModifier, $(content.character2.character.modifier)]
     character_scene:
         sources:
         - ['movies/the_social_network.json~jsonpath', '$[*].content[*].scene[*]']

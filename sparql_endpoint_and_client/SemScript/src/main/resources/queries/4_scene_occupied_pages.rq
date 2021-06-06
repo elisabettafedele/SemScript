@@ -1,0 +1,6 @@
+PREFIX ex:      <http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#>
+
+SELECT ?page
+WHERE { ?scene ex:sceneNumber "0".
+        ?scene ex:page ?page.}
+ORDER BY ASC(?page)

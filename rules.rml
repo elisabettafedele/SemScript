@@ -10,7 +10,7 @@
 @prefix rml: <http://semweb.mmlab.be/ns/rml#>.
 @prefix ql: <http://semweb.mmlab.be/ns/ql#>.
 @prefix : <http://mapping.example.com/>.
-@prefix ex: <http://example.com/>.
+@prefix ex: <http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#>.
 
 :rules_000 a void:Dataset;
     void:exampleResource :map_scene_000.
@@ -23,7 +23,7 @@
     rdfs:label "scene".
 :s_000 a rr:SubjectMap.
 :map_scene_000 rr:subjectMap :s_000.
-:s_000 rr:template "http://example.com/scene_{scene_number}".
+:s_000 rr:template "http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#scene_{scene_number}".
 :pom_000 a rr:PredicateObjectMap.
 :map_scene_000 rr:predicateObjectMap :pom_000.
 :pm_000 a rr:PredicateMap.
@@ -31,7 +31,7 @@
 :pm_000 rr:constant rdf:type.
 :pom_000 rr:objectMap :om_000.
 :om_000 a rr:ObjectMap;
-    rr:constant "http://example.com/Scene";
+    rr:constant "http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#Scene";
     rr:termType rr:IRI.
 :pom_001 a rr:PredicateObjectMap.
 :map_scene_000 rr:predicateObjectMap :pom_001.
@@ -79,7 +79,7 @@
     rdfs:label "scene2".
 :s_001 a rr:SubjectMap.
 :map_scene2_000 rr:subjectMap :s_001.
-:s_001 rr:template "http://example.com/scene_{content[*].scene_number}".
+:s_001 rr:template "http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#scene_{content[*].scene_number}".
 :pom_005 a rr:PredicateObjectMap.
 :map_scene2_000 rr:predicateObjectMap :pom_005.
 :pm_005 a rr:PredicateMap.
@@ -139,7 +139,7 @@
     rdfs:label "character".
 :s_004 a rr:SubjectMap.
 :map_character_000 rr:subjectMap :s_004.
-:s_004 rr:template "http://example.com/{content.character}".
+:s_004 rr:template "http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#{content.character}".
 :pom_008 a rr:PredicateObjectMap.
 :map_character_000 rr:predicateObjectMap :pom_008.
 :pm_008 a rr:PredicateMap.
@@ -167,71 +167,93 @@
 :om_010 a rr:ObjectMap;
     rml:reference "content.modifier";
     rr:termType rr:Literal.
+:rules_000 void:exampleResource :map_character1_000.
+:map_character1_000 rml:logicalSource :source_005.
+:source_005 a rml:LogicalSource;
+    rml:source "movies/the_social_network.json";
+    rml:iterator "$[*].content[*].scene[*]";
+    rml:referenceFormulation ql:JSONPath.
+:map_character1_000 a rr:TriplesMap;
+    rdfs:label "character1".
+:s_005 a rr:SubjectMap.
+:map_character1_000 rr:subjectMap :s_005.
+:s_005 rr:template "http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#{content.character}".
 :pom_011 a rr:PredicateObjectMap.
-:map_character_000 rr:predicateObjectMap :pom_011.
+:map_character1_000 rr:predicateObjectMap :pom_011.
 :pm_011 a rr:PredicateMap.
 :pom_011 rr:predicateMap :pm_011.
 :pm_011 rr:constant ex:hasName.
 :pom_011 rr:objectMap :om_011.
 :om_011 a rr:ObjectMap;
-    rml:reference "content.character2.character.character";
+    rml:reference "content.character1.character.character";
     rr:termType rr:Literal.
 :pom_012 a rr:PredicateObjectMap.
-:map_character_000 rr:predicateObjectMap :pom_012.
+:map_character1_000 rr:predicateObjectMap :pom_012.
 :pm_012 a rr:PredicateMap.
 :pom_012 rr:predicateMap :pm_012.
 :pm_012 rr:constant ex:says.
 :pom_012 rr:objectMap :om_012.
 :om_012 a rr:ObjectMap;
-    rml:reference "content.character2.character.dialogue";
+    rml:reference "content.character1.character.dialogue";
     rr:termType rr:Literal.
 :pom_013 a rr:PredicateObjectMap.
-:map_character_000 rr:predicateObjectMap :pom_013.
+:map_character1_000 rr:predicateObjectMap :pom_013.
 :pm_013 a rr:PredicateMap.
 :pom_013 rr:predicateMap :pm_013.
 :pm_013 rr:constant ex:hasModifier.
 :pom_013 rr:objectMap :om_013.
 :om_013 a rr:ObjectMap;
-    rml:reference "content.character2.character.modifier";
+    rml:reference "content.character1.character.modifier";
     rr:termType rr:Literal.
+:rules_000 void:exampleResource :map_character2_000.
+:map_character2_000 rml:logicalSource :source_006.
+:source_006 a rml:LogicalSource;
+    rml:source "movies/the_social_network.json";
+    rml:iterator "$[*].content[*].scene[*]";
+    rml:referenceFormulation ql:JSONPath.
+:map_character2_000 a rr:TriplesMap;
+    rdfs:label "character2".
+:s_006 a rr:SubjectMap.
+:map_character2_000 rr:subjectMap :s_006.
+:s_006 rr:template "http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#{content.character}".
 :pom_014 a rr:PredicateObjectMap.
-:map_character_000 rr:predicateObjectMap :pom_014.
+:map_character2_000 rr:predicateObjectMap :pom_014.
 :pm_014 a rr:PredicateMap.
 :pom_014 rr:predicateMap :pm_014.
 :pm_014 rr:constant ex:hasName.
 :pom_014 rr:objectMap :om_014.
 :om_014 a rr:ObjectMap;
-    rml:reference "content.character1.character.character";
+    rml:reference "content.character2.character.character";
     rr:termType rr:Literal.
 :pom_015 a rr:PredicateObjectMap.
-:map_character_000 rr:predicateObjectMap :pom_015.
+:map_character2_000 rr:predicateObjectMap :pom_015.
 :pm_015 a rr:PredicateMap.
 :pom_015 rr:predicateMap :pm_015.
 :pm_015 rr:constant ex:says.
 :pom_015 rr:objectMap :om_015.
 :om_015 a rr:ObjectMap;
-    rml:reference "content.character1.character.dialogue";
+    rml:reference "content.character2.character.dialogue";
     rr:termType rr:Literal.
 :pom_016 a rr:PredicateObjectMap.
-:map_character_000 rr:predicateObjectMap :pom_016.
+:map_character2_000 rr:predicateObjectMap :pom_016.
 :pm_016 a rr:PredicateMap.
 :pom_016 rr:predicateMap :pm_016.
 :pm_016 rr:constant ex:hasModifier.
 :pom_016 rr:objectMap :om_016.
 :om_016 a rr:ObjectMap;
-    rml:reference "content.character1.character.modifier";
+    rml:reference "content.character2.character.modifier";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_character_scene_000.
-:map_character_scene_000 rml:logicalSource :source_005.
-:source_005 a rml:LogicalSource;
+:map_character_scene_000 rml:logicalSource :source_007.
+:source_007 a rml:LogicalSource;
     rml:source "movies/the_social_network.json";
     rml:iterator "$[*].content[*].scene[*]";
     rml:referenceFormulation ql:JSONPath.
 :map_character_scene_000 a rr:TriplesMap;
     rdfs:label "character_scene".
-:s_005 a rr:SubjectMap.
-:map_character_scene_000 rr:subjectMap :s_005.
-:s_005 rr:termType rr:BlankNode.
+:s_007 a rr:SubjectMap.
+:map_character_scene_000 rr:subjectMap :s_007.
+:s_007 rr:termType rr:BlankNode.
 :pom_017 a rr:PredicateObjectMap.
 :map_character_scene_000 rr:predicateObjectMap :pom_017.
 :pm_017 a rr:PredicateMap.
@@ -239,16 +261,16 @@
 :pm_017 rr:constant ex:hasActor.
 :pom_017 rr:objectMap :om_017.
 :rules_000 void:exampleResource :map_dual_dialogue_scene_000.
-:map_dual_dialogue_scene_000 rml:logicalSource :source_006.
-:source_006 a rml:LogicalSource;
+:map_dual_dialogue_scene_000 rml:logicalSource :source_008.
+:source_008 a rml:LogicalSource;
     rml:source "movies/the_social_network.json";
     rml:iterator "$[*].content[*].scene[*]";
     rml:referenceFormulation ql:JSONPath.
 :map_dual_dialogue_scene_000 a rr:TriplesMap;
     rdfs:label "dual_dialogue_scene".
-:s_006 a rr:SubjectMap.
-:map_dual_dialogue_scene_000 rr:subjectMap :s_006.
-:s_006 rr:termType rr:BlankNode.
+:s_008 a rr:SubjectMap.
+:map_dual_dialogue_scene_000 rr:subjectMap :s_008.
+:s_008 rr:termType rr:BlankNode.
 :pom_018 a rr:PredicateObjectMap.
 :map_dual_dialogue_scene_000 rr:predicateObjectMap :pom_018.
 :pm_018 a rr:PredicateMap.
