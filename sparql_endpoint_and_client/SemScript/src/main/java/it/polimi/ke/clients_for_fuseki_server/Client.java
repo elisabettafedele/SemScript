@@ -3,39 +3,36 @@ package it.polimi.ke.clients_for_fuseki_server;
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryFactory;
 import org.apache.jena.query.QuerySolution;
-import org.apache.jena.rdfconnection.RDFConnection;
-import org.apache.jena.rdfconnection.RDFConnectionFactory;
+import org.apache.jena.rdfconnection.*;
 
 import java.util.function.Consumer;
 
+import org.apache.jena.query.*;
+import org.apache.jena.rdfconnection.RDFConnection;
+import org.apache.jena.rdfconnection.RDFConnectionFactory;
+import org.apache.jena.system.Txn;
+
+/**
+ * TODO
+ */
 public class Client {
-    public static void main(String[] args) {
-        Query query = QueryFactory.create("PREFIX  xsd:    <http://www.w3.org/2001/XMLSchema#>\n" +
-                "PREFIX  dc:     <http://purl.org/dc/elements/1.1/>\n" +
-                "PREFIX  :       <.>\n" +
-                "\n" +
-                "SELECT *\n" +
-                "{\n" +
-                "{ ?s ?p ?o } UNION { GRAPH ?g { ?s ?p ?o } }\n" +
-                "}");
-        /*
-        URLS: (for the fuseki server)
+    public static void main(String ...args) {
+        //Set the name of the file you want to upload
+        String fileName = "the_social_network";
 
-    SPARQL query: http://localhost:3030/name_of_dataset/query
-    SPARQL update: http://localhost:3030/name_of_dataset/update
-    SPARQL HTTP update: http://localhost:3030/name_of_dataset/data
+        //Create a connection with the embedded server (port number = 3031)
+        RDFConnectionRemoteBuilder builder = RDFConnectionFuseki.create()
+                .destination("http://127.0.0.1:3030/SemScript");
 
-         */
-        
-        try (RDFConnection conn = RDFConnectionFactory.connect("http://localhost:3030/ds1_example/query") ) {
-            Consumer<QuerySolution> consumer = new Consumer<QuerySolution>() {
-                @Override
-                public void accept(QuerySolution querySolution) {
-                    org.apache.jena.rdf.model.Resource subject = querySolution.getResource("s") ;
-                    System.out.println("Subject: "+ subject) ;
-                }
-            };
-            conn.querySelect(query, consumer);
-    }
+        try ( RDFConnectionFuseki conn = (RDFConnectionFuseki)builder.build() ) {
+            Txn.executeWrite(conn, () ->{
+                System.out.println("Load a file");
+                conn.load("./src/main/resources/movies_in_rdf/" + fileName + ".ttl");
+                System.out.println("In write transaction");
+            });
+        }
+        // And again - implicit READ transaction.
+        System.out.println("After write transaction");
+
     }
 }

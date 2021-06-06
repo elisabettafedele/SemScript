@@ -40,10 +40,10 @@ public class ClientForEmbeddedServer {
                 "SELECT distinct ?name\n" +
                 "WHERE { ?character ex:hasName ?name.\n" +
                 "        ?character ex:says ?something.\n" +
-                "        FILTER regex(?something, \"hi\", \"i\")}");
+                "        FILTER regex(?something, \"Did you know\", \"i\")}");
 
         //A connection is built each time; the results are print on the command line
-        System.out.println("Query 2: Which characters say a sentence x?");
+        System.out.println("Query 2: Which characters say the sentence \"Did you know\"?");
         try ( RDFConnectionFuseki conn = (RDFConnectionFuseki)builder.build() ) {
             conn.queryResultSet(query2, ResultSetFormatter::out);
         }
@@ -57,7 +57,7 @@ public class ClientForEmbeddedServer {
                 "        FILTER (?location = \"NY TAXICAB\" && ?time = \"NIGHT\")}");
 
         //A connection is built each time; the results are print on the command line
-        System.out.println("Query 3: Which are the numbers of the scenes played in a new taxicab during the night?");
+        System.out.println("Query 3: Which are the numbers of the scenes played in a New York taxicab during the night?");
         try ( RDFConnectionFuseki conn = (RDFConnectionFuseki)builder.build() ) {
             conn.queryResultSet(query3, ResultSetFormatter::out);
         }
