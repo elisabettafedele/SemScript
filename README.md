@@ -37,6 +37,7 @@ Where Character, ParticularScene and Scene are the three main classes and Action
 A representation of the classes made by OntoGraf:
 
 ![ontology.png](Resources/ontology.png)
+
 Scene represents a main scene of the movie. 
 A scene has properties about the location and the time in which
 it is played and other information about the pages it occupies on the screenplay.

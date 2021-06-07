@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a095a742-af78-4147-838f-a67bf865f8b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/QueriesSPARQL-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/QueriesSPARQL-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/QueriesSPARQL2-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QueriesSPARQLUpdated.ipynb " beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" />
     </list>
     <list id="9373864c-87d6-4f29-8df2-938e9c83b295" name="Changes by Filippo" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +42,19 @@
       <recent name="$PROJECT_DIR$/Resources" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,6 +66,7 @@
       <workItem from="1622991304997" duration="24000" />
       <workItem from="1622991337487" duration="8882000" />
       <workItem from="1623046060327" duration="1822000" />
+      <workItem from="1623048302652" duration="309000" />
     </task>
     <servers />
   </component>
