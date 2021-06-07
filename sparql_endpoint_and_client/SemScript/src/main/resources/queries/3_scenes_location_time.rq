@@ -1,6 +1,0 @@
-PREFIX ex:      <http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#>
-SELECT ?number
-WHERE { ?scene ex:location ?location.
-        ?scene ex:time ?time.
-        ?scene ex:sceneNumber ?number.
-        FILTER (?location = "NY TAXICAB" && ?time = "NIGHT")}

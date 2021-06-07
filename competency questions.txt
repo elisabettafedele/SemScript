@@ -1,4 +1,4 @@
-COMPETENCY QUESTIONS: (8)
+COMPETENCY QUESTIONS: (8 + 1)
 1) Which characters speak in german at least once?
 2) Which characters say a sentence x?
 3) Which are the numbers of the scenes played in a New York taxicab during night?
@@ -7,3 +7,5 @@ COMPETENCY QUESTIONS: (8)
 6) How many times is the word "Facebook" used?
 7) Which is the starting page of the scene x?
 8) How many times 2 characters x and y are in the same scene?
+
+9) Which are all the movies inside the dataset?
