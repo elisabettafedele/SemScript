@@ -1,6 +1,6 @@
 # Knowledge Engineering Project 2021: SemScript
 
-![logo.png](Resources/logo.png)
+![logo.png](Resources/Logo.png)
 
 
 - ###  Elisabetta Fedele  ([@elisabettafedele](https://github.com/elisabettafedele)) <br> elisabetta.fedele@mail.polimi.it
@@ -8,9 +8,9 @@
 
 
 
-##1. Knowledge Engineering
+## 1. Knowledge Engineering
 
-###1.1 Competency questions
+### 1.1 Competency questions
 In order to create the ontology, we started from the following competency questions:
 
 1) Which characters speak in german at least once?
@@ -22,7 +22,7 @@ In order to create the ontology, we started from the following competency questi
 7) Which is the starting page of the scene x?
 8) How many times 2 characters x and y are in the same scene?
 
-###1.2 Ontology structure
+### 1.2 Ontology structure
 The ontology is written in OWL and its structure is the following:
 - Character
 - ParticularScene
@@ -51,7 +51,7 @@ it can be of 4 different types according to what in this unit happens (a dialogu
 
 
 
-##2. Data Linking
+## 2. Data Linking
 
 1) The screenplays in pdf format can be downloaded from the following [website](https://www.scriptslug.com/);
 2) In order to obtain a format that can be easy translated to rdf, we used a pdf to json converter for screen play from [SMASH-CUT](https://github.com/SMASH-CUT/screenplay-pdf-to-json);
@@ -75,7 +75,7 @@ it can be of 4 different types according to what in this unit happens (a dialogu
    work with the UTF-8 one. Therefore a change should be done. Moreover, the client class works with .ttl files,
    so the extension of the output file ([the_social_network.rdf](https://github.com/elisabettafedele/KeProjectSemScript/blob/main/sparql_endpoint_and_client/SemScript/src/main/resources/movies_in_rdf/the_social_network.ttl)) has to be changed (to .ttl).
    
-##3. Semantic Web Application
+## 3. Semantic Web Application
 
 The competency questions in the [competency_questions.txt](https://github.com/elisabettafedele/KeProjectSemScript/blob/main/competency%20questions.txt) file have been converted to the SPARQL queries contained
 in the [queries folder](https://github.com/elisabettafedele/KeProjectSemScript/tree/main/sparql_endpoint_and_client/SemScript/src/main/resources/queries). They can be executed in different ways:
