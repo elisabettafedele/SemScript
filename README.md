@@ -39,7 +39,7 @@ Where Movie, Character, ParticularScene and Scene are the three main classes and
 
 A representation of the classes made by OntoGraf:
 
-![ontology.png](Resources/ontology_deprecated.png)
+![ontology.png](Resources/ontology.png)
 
 Movie represents a movie. It has only the title property. It is as a named graph.
 
@@ -102,7 +102,7 @@ in the [queries folder](https://github.com/elisabettafedele/KeProjectSemScript/t
    (add a SPARQL endpoint in the plugin settings specifying the location, namely port 3030, then open a .rq file 
    and run the query).
 3) a last method is to run the Fuseki server on your pc (maybe using [this image](https://hub.docker.com/r/stain/jena-fuseki))
-   and configure it as specified at 2), and after using the jupyter notebook [Queries.ipynb](https://github.com/elisabettafedele/KeProjectSemScript/blob/main/Queries.ipynb) to run the queries.
+   and configure it as specified at 2), and after using the jupyter notebook [QueriesSPARQL.ipynb](https://github.com/elisabettafedele/KeProjectSemScript/blob/main/QueriesSPARQL.ipynb) to run the queries.
 
 Some last notes:
 - you can configure a reasoner on the Fuseki server by using the [fuseki_server_config_file.ttl](https://github.com/elisabettafedele/KeProjectSemScript/blob/main/fuseki_server_config_file.ttl) provided (only

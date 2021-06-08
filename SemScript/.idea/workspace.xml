@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13fab5b4-944f-4710-b7bc-f8916e2dd00d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../QueriesSPARQL2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../QueriesSPARQL2.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/queries_multiple_movies/2_example.rq" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/queries_multiple_movies/2_example.rq" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movies_in_rdf/default_graph.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/movies_in_rdf/default_graph.ttl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/queries_multiple_movies/2_example.rq" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/queries_multiple_movies/2_example.rq" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +169,7 @@
       <workItem from="1623007382795" duration="242000" />
       <workItem from="1623013121136" duration="7000" />
       <workItem from="1623077335462" duration="10080000" />
-      <workItem from="1623101705391" duration="5251000" />
+      <workItem from="1623101705391" duration="5863000" />
     </task>
     <servers />
   </component>
