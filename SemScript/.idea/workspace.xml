@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13fab5b4-944f-4710-b7bc-f8916e2dd00d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/queries_multiple_movies/0_get_default_graph_content.rq" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/polimi/ke/embedded_client_server_multiple_movies/ClientForEmbeddedServerMultipleMovies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/polimi/ke/embedded_client_server_multiple_movies/ClientForEmbeddedServerMultipleMovies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/polimi/ke/embedded_client_server_multiple_movies/EmbeddedServerMultipleMovies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/polimi/ke/embedded_client_server_multiple_movies/EmbeddedServerMultipleMovies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/queries_multiple_movies/0'_get_named_graphs.rq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/queries_multiple_movies/0_get_all.rq" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/queries_multiple_movies/0'_get_all.rq" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/queries_multiple_movies/2_example.rq" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/queries_multiple_movies/2_character_says.rq" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/queries_multiple_movies/0'_get_named_graphs.rq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/queries_multiple_movies/0_get_all.rq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/queries_multiple_movies/2_example.rq" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +60,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.SparqlAppPrefixSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -130,15 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,9 +153,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ClientForEmbeddedServerMultipleMovies" />
-        <item itemvalue="Application.EmbeddedServer" />
         <item itemvalue="Application.EmbeddedServerMultipleMovies" />
         <item itemvalue="Application.ClientForEmbeddedServer" />
+        <item itemvalue="Application.EmbeddedServer" />
         <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
@@ -170,6 +177,9 @@
       <workItem from="1623013121136" duration="7000" />
       <workItem from="1623077335462" duration="10080000" />
       <workItem from="1623101705391" duration="5863000" />
+      <workItem from="1623153974004" duration="2685000" />
+      <workItem from="1623181014165" duration="8000" />
+      <workItem from="1623411603144" duration="2299000" />
     </task>
     <servers />
   </component>

@@ -39,6 +39,7 @@ public class EmbeddedServerMultipleMovies {
 
         //create an empty dataset
         Dataset dataset = DatasetFactory.create();
+        dataset.getPrefixMapping().setNsPrefix("", "");
 
         //fill it with the graphs
         dataset.setDefaultModel(defaultGraph);

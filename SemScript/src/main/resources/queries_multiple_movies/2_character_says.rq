@@ -1,10 +1,10 @@
 PREFIX ex:      <http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#>
 
-SELECT distinct ?name
-WHERE
-{ ?src ex:title "The social network".
-  GRAPH ?src
+SELECT distinct ?title ?name
+WHERE{
+     ?movie ex:title ?title.
+  GRAPH ?movie
   { ?character ex:hasName ?name.
     ?character ex:says ?something.
-    FILTER regex(?something, "Did you know", "i")}
+    FILTER regex(?something, "Abracadabra", "i")}
 }
