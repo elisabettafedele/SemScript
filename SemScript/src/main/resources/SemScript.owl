@@ -5,7 +5,8 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript"/>
     
 
@@ -156,7 +157,7 @@
     <!-- http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#title -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#title">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#Movie"/>
+        <rdfs:domain rdf:resource="https://schema.org/Movie"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -194,7 +195,7 @@
     <!-- http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#Character -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#Character">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#Movie"/>
+        <owl:disjointWith rdf:resource="https://schema.org/Movie"/>
     </owl:Class>
     
 
@@ -221,15 +222,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#Movie -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#Movie">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#ParticularScene"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#Scene"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#ParticularScene -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#ParticularScene">
@@ -245,13 +237,16 @@
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://schema.org/Movie"/>
     </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#Scene -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#Scene"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#Scene">
+        <owl:disjointWith rdf:resource="https://schema.org/Movie"/>
+    </owl:Class>
     
 
 
@@ -260,6 +255,12 @@
     <owl:Class rdf:about="http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#TransitionScene">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#ParticularScene"/>
     </owl:Class>
+    
+
+
+    <!-- https://schema.org/Movie -->
+
+    <owl:Class rdf:about="https://schema.org/Movie"/>
     
 
 

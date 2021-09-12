@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a095a742-af78-4147-838f-a67bf865f8b5" name="Default Changelist" comment="">
+    <list default="true" id="a095a742-af78-4147-838f-a67bf865f8b5" name="Default Changelist" comment="add schema prefix">
       <change afterPath="$PROJECT_DIR$/SemScript/src/main/resources/movies_in_rdf/try.n3" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/SemScript/src/main/resources/movies_in_rdf/try.ttl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SemScript.owl" beforeDir="false" afterPath="$PROJECT_DIR$/SemScript.owl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SemScript/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SemScript/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SemScript/src/main/java/it/polimi/ke/embedded_client_server_multiple_movies/ClientForEmbeddedServerMultipleMovies.java" beforeDir="false" afterPath="$PROJECT_DIR$/SemScript/src/main/java/it/polimi/ke/embedded_client_server_multiple_movies/ClientForEmbeddedServerMultipleMovies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SemScript/src/main/java/it/polimi/ke/embedded_client_server_multiple_movies/EmbeddedServerMultipleMovies.java" beforeDir="false" afterPath="$PROJECT_DIR$/SemScript/src/main/java/it/polimi/ke/embedded_client_server_multiple_movies/EmbeddedServerMultipleMovies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SemScript/src/main/java/it/polimi/ke/utils/RDFSerializationFormatsConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/SemScript/src/main/java/it/polimi/ke/utils/RDFSerializationFormatsConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/rules.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SemScript/src/main/resources/SemScript.owl" beforeDir="false" afterPath="$PROJECT_DIR$/SemScript/src/main/resources/SemScript.owl" afterDir="false" />
     </list>
     <list id="9373864c-87d6-4f29-8df2-938e9c83b295" name="Changes by Filippo" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,8 +62,17 @@
       <workItem from="1623090450592" duration="682000" />
       <workItem from="1623139701436" duration="1394000" />
       <workItem from="1623142178270" duration="91000" />
-      <workItem from="1631441191979" duration="1304000" />
+      <workItem from="1631441191979" duration="1530000" />
+      <workItem from="1631443537708" duration="269000" />
     </task>
+    <task id="LOCAL-00001" summary="add schema prefix">
+      <created>1631443351066</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631443351066</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,5 +92,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add schema prefix" />
+    <option name="LAST_COMMIT_MESSAGE" value="add schema prefix" />
   </component>
 </project>

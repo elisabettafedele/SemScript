@@ -11,14 +11,14 @@ import org.apache.jena.rdfconnection.RDFConnectionRemoteBuilder;
  * It connects to localhost on port number 3031 and executes the query
  * correspondent to the competency questions devised.
  * The url for the connection is:
- * http://localhost:3031/ds/query
+ * http://localhost:3032/ds/query
  */
 public class ClientForEmbeddedServerMultipleMovies {
     public static void main(String[] args) {
 
         //Create a connection with the embedded server (port number = 3031)
         RDFConnectionRemoteBuilder builder = RDFConnectionFuseki.create()
-                .destination("http://127.0.0.1:3031/ds/query");
+                .destination("http://127.0.0.1:3032/ds/query");
 
         //Query 0:
         Query query0 = QueryFactory.create("SELECT ?s ?p ?o\n" +

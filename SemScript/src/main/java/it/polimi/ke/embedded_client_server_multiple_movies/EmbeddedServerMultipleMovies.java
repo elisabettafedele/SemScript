@@ -49,7 +49,7 @@ public class EmbeddedServerMultipleMovies {
         //start the Fuseki server on 3031 port
         FusekiServer server = FusekiServer.create()
                 .add("/ds", dataset)
-                .port(3031) //different from the standard 3030
+                .port(3032) //different from the standard 3030
                 .build() ;
         server.start() ;
 
