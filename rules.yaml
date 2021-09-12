@@ -1,6 +1,7 @@
 prefixes:
   ex: "http://www.semanticweb.org/elisabetta&amp;filippo/ontologies/2021/4/SemScript#"
-  xsd: "http://www.w3.org/2001/XMLSchema#"  
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  schema: "https://schema.org/"
 
 mappings:
     scene:
@@ -124,7 +125,7 @@ mappings:
         po:
              - p: ex:hasActor1
                o:
-                - mapping: character
+                - mapping: character1
                   condition:
                     function: equal
                     parameters:
@@ -132,7 +133,7 @@ mappings:
                         - [str2, $(content.character1.character.character)]
              - p: ex:hasActor2
                o:
-                - mapping: character
+                - mapping: character2
                   condition:
                     function: equal
                     parameters:

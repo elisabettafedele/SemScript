@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13fab5b4-944f-4710-b7bc-f8916e2dd00d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/queries_multiple_movies/0_get_default_graph_content.rq" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/movies_in_rdf/try.n3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/movies_in_rdf/try.ttl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/polimi/ke/embedded_client_server_multiple_movies/ClientForEmbeddedServerMultipleMovies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/polimi/ke/embedded_client_server_multiple_movies/ClientForEmbeddedServerMultipleMovies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/polimi/ke/embedded_client_server_multiple_movies/EmbeddedServerMultipleMovies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/polimi/ke/embedded_client_server_multiple_movies/EmbeddedServerMultipleMovies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/queries_multiple_movies/0'_get_named_graphs.rq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/queries_multiple_movies/0_get_all.rq" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/queries_multiple_movies/0'_get_all.rq" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/queries_multiple_movies/2_example.rq" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/queries_multiple_movies/2_character_says.rq" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/queries_multiple_movies/0'_get_named_graphs.rq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/queries_multiple_movies/0_get_all.rq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/queries_multiple_movies/2_example.rq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/polimi/ke/utils/RDFSerializationFormatsConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/polimi/ke/utils/RDFSerializationFormatsConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rules.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../rules.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +57,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.SparqlAppPrefixSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -73,20 +70,7 @@
       <recent name="it.polimi.ke.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ClientForEmbeddedServerMultipleMovies">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="it.polimi.ke.client_for_fuseki_server.Client" />
-      <module name="SemScript" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.polimi.ke.client_for_fuseki_server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.RDFSerializationFormatsConverter">
     <configuration name="ClientForEmbeddedServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="it.polimi.ke.embedded_client_server.ClientForEmbeddedServer" />
       <module name="SemScript" />
@@ -139,24 +123,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="RDFSerializationFormatsConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.polimi.ke.utils.RDFSerializationFormatsConverter" />
+      <module name="SemScript" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.polimi.ke.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RDFSerializationFormatsConverter" />
         <item itemvalue="Application.ClientForEmbeddedServerMultipleMovies" />
         <item itemvalue="Application.EmbeddedServerMultipleMovies" />
         <item itemvalue="Application.ClientForEmbeddedServer" />
         <item itemvalue="Application.EmbeddedServer" />
-        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +165,12 @@
       <workItem from="1623101705391" duration="5863000" />
       <workItem from="1623153974004" duration="2685000" />
       <workItem from="1623181014165" duration="8000" />
-      <workItem from="1623411603144" duration="2299000" />
+      <workItem from="1623411603144" duration="3122000" />
+      <workItem from="1623415661735" duration="3781000" />
+      <workItem from="1623428645545" duration="14000" />
+      <workItem from="1624440776628" duration="750000" />
+      <workItem from="1624720833911" duration="9000" />
+      <workItem from="1631441076351" duration="107000" />
     </task>
     <servers />
   </component>
